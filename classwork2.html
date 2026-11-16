@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 10px;
+            background-color: black;
+            gap: 20px;
+            
+            
+        }
+        h2 {
+          color: white;
+          font-size: 2rem;
+
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+          }
+        nav a {
+            color: white;
+            font-size: 2rem;
+        }
+        nav a:hover {
+              color: blue;
+        }
+        .container {
+            display: flex;
+            gap: 30px;
+            width: 100%;
+        }
+        aside {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            height: 80vh;
+            width: 220px;
+            border-radius: 0 10px 10px;
+            border: 1px solid aliceblue;
+            box-shadow: 0 8px 8px 10px;
+        }
+        aside h2{
+            color: black;
+            margin-left: 10px;
+            font-size: 1.5rem;
+
+        }
+        .vertical-nav {
+            display: flex;
+            flex-direction: column;
+        }
+        .vertical-nav a {
+            color: black;
+            text-decoration: none;
+            border: 1px solid lightblue;
+            border-radius: 4px;
+            margin: 10px;
+            padding: 7px;
+
+        }
+        .vertical-nav h3 {
+            padding-top: 10px;
+        }
+        aside h3{
+            font-size: 1.5rem;
+            margin-left: 10px;
+        }
+        img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        .mon {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: 250px;  
+        }
+        .mon .mark{
+            margin-top: 30px;
+            border: 1px solid grey;
+            min-height: 300px;
+            margin-left: 20px;
+            padding: 10px;
+            width: 70%;
+            border-radius: 15px;
+            background-color: white;
+        }
+       .mark strong {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-size: 1.2rem;
+        margin-top: 20px;
+       }
+       .mark p {
+        text-align: center;
+        padding-top: 10px;
+       }
+       .mark .null {
+        background-color: black;
+        color: white;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        border: none;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 55px;
+       }
+       .container .drum{
+        border: 1px solid grey;
+        border: 15px;
+        width: 15%;
+        margin-top: 50px;
+        height: 350px;
+        border-radius: 15px;
+        background-color: white;
+       }
+       .drum img {
+           margin-top: 10px;
+       }
+       .drum strong{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 1.2rem;
+       }
+       .drum p {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+       }
+       .drum button {
+        background-color: black;
+        color: white;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        border: none;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+       }
+       .mane {
+        border: 1px solid grey;
+        margin-top: 55px;
+        border-radius: 15px;
+        width: 15%;
+        margin-left: 3opx;
+        height: 350px;
+        background-color: white;
+       }
+       .mane img {
+        margin-top: 10px
+       }
+       .mane strong {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+       }
+       .mane p {
+        text-align: center;
+        margin-top: 10px;
+       }
+       .mane button {
+        background-color: black;
+        color: white;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+         border: none;
+         margin: auto;
+         display: flex;
+         justify-content: center;
+         margin-top: 80px        
+       }
+       footer{
+        background-color: black;
+        height: 80px;
+        margin: 15px;
+        width: 100%;
+        flex-direction: column;
+       }
+       footer nav {
+        display: flex;
+        justify-content: center;
+       }
+       footer p {
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+
+       }
+       body {
+        background-color: #9bd0ef;
+        background: linear-gradient(to right, #6bc7c2,#9bd0ef,#7799c7);
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>My Website</h2>
+        <nav>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+    <div class="container">
+<aside>
+    <h2>Navigation</h2>
+     <div class="vertical-nav">
+        <a href="#Dashboard">Dashboard</a>
+        <a href="#Profile">profile</a>
+        <a href="#settings">Settings</a>
+        <a href="#Model">Model</a>
+        <a href="#Invite">Invite</a>
+        <a href="#Transaction">Transaction</a>
+        <a href="#Payment">Payment</a>
+
+     </div>
+</aside>
+    <div class="mon">
+      <div>
+        <h1>Profile Card</h1>
+      </div>
+      <div class="mark">
+       <img src="akaza.png" alt="">
+       <strong>
+        Ada Lovelace
+       </strong>
+       <p>
+        Mathematician and  <br>writer,Known for her  <br>work  on early  <br>computers
+       </p>
+       <button class="null">
+        view profile
+       </button>
+      </div>
+    </div>
+    <div class="drum">
+     <img src="akaza.png" alt="">
+     <strong>Grace hopper</strong>
+     <p>Computer scientist <br>and US navy rear <br>admiral.pioneer of<br>programming</p>
+     <button>View Profile</button>
+    </div>
+    <div class="mane">
+        <img src="akaza.png" alt="">
+        <strong>alan turning</strong>
+        <p>Father of theoretical<br>computer science<br>and artificial<br>intelligence</p>
+        <button>View Profile</button>
+    </div>
+    <footer>
+        <nav>
+            <a href="#">privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Help</a>
+        </nav>
+        <div>&copy;2025 my Website</div>
+    </footer>
+
+
+    
+    
+</body>
+</html>

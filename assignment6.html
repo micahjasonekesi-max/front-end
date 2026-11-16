@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore</title>
+  <style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #f4f4f4;
+}
+
+.topbar,
+footer {
+  min-height: 40px;
+  background: #303030;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar {
+  position: relative;
+  padding: 0 20px;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 30px;
+}
+
+.topbar a,
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topbar .logout {
+  position: absolute;
+  right: 22px;
+  color: #ff3030;
+  font-weight: bold;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr) 130px;
+  gap: 12px;
+  padding: 8px;
+  min-height: 270px;
+}
+
+.sidebar {
+  background: #888;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.card {
+  min-width: 0;
+  padding: 10px;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px #0002;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card h2 {
+  margin: 9px 0 4px;
+  font-size: 16px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 12px;
+  color: #555;
+}
+
+footer {
+  gap: 34px;
+  min-height: 40px;
+}
+
+@media (max-width: 700px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .topbar nav {
+    gap: 12px;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    <a class="logout" href="#">Logout</a>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <a href="#">Dashboard</a>
+      <a href="#">Profile</a>
+      <a href="#">Messages</a>
+      <a href="#">Friends</a>
+      <a href="#">Gallery</a>
+      <a href="#">Settings</a>
+      <a href="#">Help</a>
+      <a href="#">Support</a>
+    </aside>
+
+    <section class="cards">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=700&q=80" alt="Mountain landscape" />
+        <h2>Nature</h2>
+        <p>Beautiful scenery of mountains and rivers.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80" alt="Technology circuit board" />
+        <h2>Technology</h2>
+        <p>Latest trends in mobile and web apps.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=700&q=80" alt="Athlete running" />
+        <h2>Sports</h2>
+        <p>Stay updated with football and basketball.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=80" alt="Students learning in a classroom" />
+        <h2>Education</h2>
+        <p>Learning resources and study guides.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=700&q=80" alt="Earth from space" />
+        <h2>Health</h2>
+        <p>Tips for a healthy and balanced lifestyle.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=80" alt="Modern office with a view" />
+        <h2>Travel</h2>
+        <p>Discover amazing destinations worldwide.</p>
+      </article>
+    </section>
+
+    <aside class="sidebar">
+      <a href="#">Notifications</a>
+      <a href="#">Calendar</a>
+      <a href="#">Tasks</a>
+      <a href="#">Events</a>
+      <a href="#">Reports</a>
+      <a href="#">Analytics</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact</a>
+    </aside>
+  </main>
+
+  <footer>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Help Center</a>
+    <a href="#">Feedback</a>
+  </footer>
+</body>
+</html>

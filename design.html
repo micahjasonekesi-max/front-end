@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designo</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #333333;
+      padding: 40px 6%;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+
+    nav a {
+      color: #333333;
+      text-decoration: none;
+      font-size: 12px;
+      margin-left: 25px;
+      letter-spacing: 1px;
+    }
+
+
+
+    .intro h1 {
+      font-size: 23px;
+      line-height: 1.4;
+      max-width: 250px;
+    }
+
+    .intro p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .learn-more {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 12px 20px;
+      background: white;
+      color: #222222;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .design-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .card {
+      min-height: 170px;
+      padding: 25px;
+      border-radius: 12px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .web {
+      grid-row: span 2;
+      min-height: 350px;
+      background: #159447;
+    }
+
+    .app {
+      background: #1769c2;
+    }
+
+    .graphic {
+      background: #159447;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      letter-spacing: 3px;
+      margin-bottom: 8px;
+    }
+
+    .card a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    .why {
+      text-align: center;
+      margin-top: 70px;
+    }
+
+    .why h2 {
+      margin-bottom: 30px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      gap: 25px;
+    }
+
+    .feature {
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 12px;
+      border-radius: 50%;
+      background: #1769c2;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+    }
+
+    .feature:nth-child(2) .icon {
+      background: #159447;
+    }
+
+    @media (max-width: 650px) {
+      body {
+        padding: 25px 5%;
+      }
+
+      header {
+        align-items: flex-start;
+        gap: 20px;
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0 15px 0 0;
+      }
+
+      .intro {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .design-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .web {
+        grid-row: auto;
+        min-height: 220px;
+      }
+
+      .features {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">DESIGNO</div>
+
+    <nav>
+      <a href="#">OUR COMPANY</a>
+      <a href="#">LOCATIONS</a>
+      <a href="#">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Award-winning custom designs and digital branding</h1>
+
+      <div>
+        <p>
+          With over 10 years in the industry, we create responsive websites,
+          app designs, and engaging brand experiences.
+        </p>
+        <a class="learn-more" href="#">LEARN MORE</a>
+      </div>
+    </section>
+
+    <section class="design-cards">
+      <article class="card web">
+        <h2>WEB DESIGN</h2>
+        <a href="#">VIEW PROJECTS →</a>
+      </article>
+
+      <article class="card app">
+        <h2>APP DESIGN</h2>
+        <a href="#">VIEW PROJECTS →</a>
+      </article>
+
+      <article class="card graphic">
+        <h2>GRAPHIC DESIGN</h2>
+        <a href="#">VIEW PROJECTS →</a>
+      </article>
+    </section>
+
+    <section class="why">
+      <h2>Why Designo?</h2>
+
+      <div class="features">
+        <div class="feature">
+          <div class="icon">★</div>
+          PASSIONATE
+        </div>
+
+        <div class="feature">
+          <div class="icon">⚙</div>
+          RESOURCEFUL
+        </div>
+
+        <div class="feature">
+          <div class="icon">♡</div>
+          FRIENDLY
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

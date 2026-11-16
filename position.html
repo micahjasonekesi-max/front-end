@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: blue;
+            border-radius: 10px;
+            width: 100px;
+            height: 100px;
+        }
+        .static {
+            position: static;
+        }
+        .relative {
+           position: relative;
+           top: 40px;
+           right: 40px; 
+        }
+        .absolute {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+        }
+        .fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- positioning  -->
+    <div class="box static"></div><br>
+    <div class="box relative"></div><br>
+    <div class="box fixed"></div><br>
+    <div class="box absolute"></div><br>
+</body>
+</html>
